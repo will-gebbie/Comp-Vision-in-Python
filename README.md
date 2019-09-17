@@ -1,2 +1,2 @@
-# ComputerVision-CS559-
+# ComputerVision-CS559
 Computer Vision Projects from class.
