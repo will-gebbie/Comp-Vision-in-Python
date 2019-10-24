@@ -1,4 +1,5 @@
 import cv2
+import math
 
 
 def convert2gray(img):
@@ -44,12 +45,12 @@ def pixel_dist_2_real_dist(x_i, x_f, img_w):
     WINDOW_WIDTH = 6.5  # inches
 
     # Feet/Inch RealWorld/Picture
-    SCALE = 2 / 1
+    SCALE = 3 / 1
 
     # Inches per Pixel
     pixel_scale = WINDOW_WIDTH / img_w
 
-    pixel_dist = x_f - x_i
+    pixel_dist = abs(x_f - x_i)
     dist_in_inches = pixel_dist * pixel_scale
     dist_in_feet = dist_in_inches * SCALE
 
